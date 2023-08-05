@@ -696,27 +696,25 @@ body {
 }
 
 /*last*/
-.footer-heading .social-footer {
+/* .footer-heading .social-footer {
     margin-bottom: 50%;
     flex-direction: column;
     justify-content: flex-start;
-
-}
+} */
 
 .social-footer {
     display: flex;
     justify-content: center;
     gap: 16px;
     padding-top: 10px;
-
 }
 
 .footer-heading .social-footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50%;
     padding: 30px;
-
 }
 
 .social-footer .link:hover,
@@ -730,9 +728,48 @@ body {
     fill: currentColor;
 }
 
+/*----This is Subcribe Footer----*/
 
+.subscribe-footer {
+    width: 230px;
+    height: 40px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
 
+.footer-heading .subscribe-footer {
+    
+}
 
+.subscribe-footer.email {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subscribe {
+    border-radius: 4px;
+    background: var(--iris, #4D5AE5);
+    color: var(--white, #FFF);
+    margin-left: 60px;
+}
+
+.button.subscribe:hover, 
+.button.subscribe:focus {
+    font-size: 16px;
+    padding: 8px 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+}
+
+/* .icon-subscribe {
+    color: var(--white, #FFF);
+    text-align: center;
+} */
 
 /*----Checked----*/
 .logo,
@@ -797,13 +834,11 @@ body {
     align-items: center;
     width: 30px;
     height: 30px;
-
     background-color: var(--cornflower, #e7e9fc);
     color: var(--navyblue);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     cursor: pointer;
-
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -814,8 +849,9 @@ body {
 
 .modal-close:hover,
 .modal-close:focus {
+    color: var(--whitecolor);
     background-color: var(--ocean);
-    color: var(--white);
+    
 }
 
 .is-hidden {
