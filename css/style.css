@@ -90,8 +90,8 @@ body {
 .contact-menu {
     display: flex;
     align-items: center;
-
 }
+
 
 /*----Checked----*/
 .logo-link {
@@ -146,6 +146,7 @@ body {
 .contacts-menu.list .contact.link:hover,
 .contacts-menu.list .contact.link:focus {
     color: var(--iriscolor);
+    transition: color 250ms ease-in-out;
 }
 
 /*-----------------------------------*\
@@ -347,17 +348,14 @@ body {
     margin-top: 30px;
 }
 
-
+/* .section.no.top-padding {
+    padding: 0;
+} */
 
 /*----Checked----*/
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
-}
-
-/*----Checked----*/
-.section.no.top-padding {
-    padding-top: 0;
 }
 
 /*----Checked----*/
