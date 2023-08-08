@@ -453,43 +453,62 @@
                 </svg>
             </button>
             <!--This is FORM-->
-            <form name="form">
-                <legend class="group-title">Leave your contacts and we will call you back</legend>
-                <label class="label">
-                    Name
-                    <input type="text" name="name" autofocus />
-                    <svg class="form-icon" width="18" height="18" type="text" name="name">
+            <p class="form-header">Leave your contacts and we will call you back</p>
+
+            <form name="signup_form" autocomplete="on" class="form-container list" method="">
+
+                <label class="form-label">
+
+                    <span class="form-label-text">Name </span>
+                    <input type="text" class="form-input" name="full_name" required />
+                    <!-- <span class="form-input-iconbox"> -->
+                    <svg class="form-input-icon">
                         <use href="./images/icons.svg#name-icon"></use>
                     </svg>
+                    <!-- </span> -->
                 </label>
-                <label class="label">
-                    Phone
-                    <input type="text" name="phone" autofocus />
-                    <svg class="form-icon" width="18" height="18" type="text" name="phone">
+
+                <label class="form-label">
+                    <span class="form-label-text">Phone</span>
+                    <input type="tel" class="form-input" name="phone_number" required />
+                    <svg class="form-input-icon">
                         <use href="./images/icons.svg#phone-icon"></use>
                     </svg>
                 </label>
-                <label class="label">
-                    Email
-                    <input type="text" name="email" autofocus />
-                    <svg class="form-icon" width="18" height="18" type="text" name="email">
+
+                <label class="form-label">
+                    <span class="form-label-text">Email</span>
+                    <input type="email" class="form-input" name="email_add" required />
+                    <svg class="form-input-icon">
                         <use href="./images/icons.svg#email-icon"></use>
                     </svg>
                 </label>
-                <label class="label">
-                    Comment
-                    <textarea name="text-feedback" rows="5" placeholder="Text input"></textarea>
+
+                <label class="form-label-textarea">
+                    <span class="form-label-text">Comment</span>
+                    <textarea name="comment" class="form-textarea" placeholder="Text input" required></textarea>
                 </label>
-                <div class="form-field">
-                    <input type="checkbox" class="check-box">
-                    <svg class="checkbox-icon" width="16" height="16">
-                        <use href="./images/icons.svg#check-box"></use>
-                    </svg>
-                    <label class="form-label" for="policy-message">I accept the terms and conditions of the Privacy
-                        Policy</label>
-                    <button type="button" class="button submit">Send</button>
+
+                <label class="form-agree-box">
+                    <input type="checkbox" value="agree" name="agreement" class="checkbox" required />
+                    <span class="checkbox-icon">
+                        <svg class="check-mark">
+                            <use href="./images/icons.svg#check-box"></use>
+                        </svg>
+                    </span>
+
+                    <span class="form-agree-box_text">
+                        I accept the terms and conditions of the &nbsp;<a href="#" class="form-agree-box_link">Privacy
+                            Policy</a>
+                    </span>
+                </label>
+
+                <div class="form-button_container">
+                    <button type="submit" class="form-button">Send</button>
                 </div>
+
             </form>
+
         </div>
     </div>
 
