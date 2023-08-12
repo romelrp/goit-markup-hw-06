@@ -434,7 +434,7 @@
                     <form class="footer-heading">
                         <label class="subscribe-footer list">
                             Subscribe
-                            <input type="email" placeholder="E-mail" />
+                            <input type="email" class="footer-input" placeholder="E-mail" required />
                             <button type="button" class="button subscribe">Subscribe
                                 <svg href="icon-subscribe" width="24" height="24">
                                     <use href="./images/icons.svg#subscribe"></use>
@@ -453,61 +453,49 @@
                 </svg>
             </button>
             <!--This is FORM-->
-            <p class="form-header">Leave your contacts and we will call you back</p>
+            <h3 class="header-form">Leave your contacts and we will call you back</h3>
 
-            <form name="signup_form" autocomplete="on" class="form-container list" method="">
-
-                <label class="form-label">
-
-                    <span class="form-label-text">Name </span>
-                    <input type="text" class="form-input" name="full_name" required />
-                    <!-- <span class="form-input-iconbox"> -->
-                    <svg class="form-input-icon">
+            <form name="signup_form" autocomplete="on" class="container-form">
+                <label class="label-form">
+                  <span class="text-label">Name</span>
+                  <input type="text" class="label-input" name="full-name" required/>
+                  <svg class="input-icon">
                         <use href="./images/icons.svg#name-icon"></use>
-                    </svg>
-                    <!-- </span> -->
+                  </svg>
                 </label>
 
-                <label class="form-label">
-                    <span class="form-label-text">Phone</span>
-                    <input type="tel" class="form-input" name="phone_number" required />
-                    <svg class="form-input-icon">
+                <label class="label-form">
+                  <span class="text-label">Phone</span>
+                  <input type="tel" class="label-input" name="contact-number" required/>
+                  <svg class="input-icon">
                         <use href="./images/icons.svg#phone-icon"></use>
-                    </svg>
+                  </svg>
                 </label>
 
-                <label class="form-label">
-                    <span class="form-label-text">Email</span>
-                    <input type="email" class="form-input" name="email_add" required />
-                    <svg class="form-input-icon">
-                        <use href="./images/icons.svg#email-icon"></use>
+                <label class="label-form">
+                    <span class="text-label">Phone</span>
+                    <input type="email" class="label-input" name="email-address" required/>
+                    <svg class="input-icon">
+                          <use href="./images/icons.svg#email-icon"></use>
                     </svg>
-                </label>
+                  </label>
 
-                <label class="form-label-textarea">
-                    <span class="form-label-text">Comment</span>
+                  <label class="textarea-label-form">
+                    <span class="label-text">Comment</span>
                     <textarea name="comment" class="form-textarea" placeholder="Text input" required></textarea>
                 </label>
 
-                <label class="form-agree-box">
-                    <input type="checkbox" value="agree" name="agreement" class="checkbox" required />
-                    <span class="checkbox-icon">
-                        <svg class="check-mark">
-                            <use href="./images/icons.svg#check-box"></use>
-                        </svg>
-                    </span>
+                <span class="form-agree-box_text">
+                    I accept the terms and conditions of the &nbsp;<a href="#" class="form-agree-box_link">Privacy
+                        Policy</a>
+                </span>
+            </label>
 
-                    <span class="form-agree-box_text">
-                        I accept the terms and conditions of the &nbsp;<a href="#" class="form-agree-box_link">Privacy
-                            Policy</a>
-                    </span>
-                </label>
+            <div class="form-button_container">
+                <button type="submit" class="form-button">Send</button>
+            </div>
 
-                <div class="form-button_container">
-                    <button type="submit" class="form-button">Send</button>
-                </div>
-
-            </form>
+        </form>
 
         </div>
     </div>
