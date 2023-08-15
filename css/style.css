@@ -687,10 +687,10 @@ body {
     margin: auto 0;
 } */
 
-.footer-block {
+/* .footer-block {
     list-style-type: none;
     margin-left: 135px;
-}
+} */
 
 .footer-heading {
     color: var(--whitecolor);
@@ -699,13 +699,6 @@ body {
     font-weight: 500;
 
 }
-
-/*last*/
-/* .footer-heading .social-footer {
-    margin-bottom: 50%;
-    flex-direction: column;
-    justify-content: flex-start;
-} */
 
 .social-footer {
     display: flex;
@@ -734,6 +727,10 @@ body {
 }
 
 /*----This is Subcribe Footer----*/
+.footer-subscribe {
+    text-decoration: none;
+}
+
 
 .subscribe-footer {
     width: 230px;
@@ -742,8 +739,13 @@ body {
     font-weight: 500;
     line-height: 24px; 
     letter-spacing: 0.32px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     gap: 16px;
+    
+}
+
+.footer-heading .subscribe-footer {
+    gap: 16px;
+    
 }
 
 .footer-input {
@@ -751,73 +753,34 @@ body {
     border: 1px solid var(--whitecolor);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background-color: var(--navyblue-modal);
-    width: 224px;
+    width: 264px;
     height: 40px;
-    flex-shrink: 0;
     color: var(--whitecolor);
     
 }
-
-.button.subscribe {
-    /* margin-left: 250px;
-    margin-bottom: 50px;
-    display: flex; */
+.icon-subscribe {
+    color: currentColor;
 }
-
-.subscribe {
+.button.subscribe {
     background: var(--iris, #4D5AE5);
-    color: var(--white, #FFF);
+    color: var(--whitecolor);
+    line-height: 1.87;
+    letter-spacing: 0.06em;
     display: inline-flex;
     padding: 8px 24px;
     gap: 16px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;    
+    border-radius: 4px;   
 }
 
-.footer-heading .subscribe-footer {
-   
+.button.subscribe:hover,
+.button.subscribe:focus {
+    background-color: var(--oceancolor);
 }
-
-.subscribe-footer .footer-input
-.subscribe-footer .button.subscribe {
-    display: flex;      
-}
-
-.footer-input.button.subscribe {
-    flex-direction: row;
-    display: flex;   
-}
-
 .list, 
 .footer-input,
 .button.subscribe {
     display: flex;
-    
-   
 }
-
-/* .menu,
-.navigation,
-.nav-menu,
-.contact-menu {
-    display: flex;
-    align-items: center;
-} */
-
-
-.button.subscribe:hover,
-.button.subscribe:focus {
-    color: currentColor;
-    
-    
-}
-
-/* .icon-subscribe {
-    color: var(--white, #FFF);
-    text-align: center;
-} */
-
 /*----Checked----*/
 .logo,
 .studio {
@@ -909,295 +872,46 @@ body {
 }
 
 /*---------------This is FORM------------------*/
-
-
-/***end***/
-
-/* .modal-title {
-    padding: 16px 24px;
+.header-form {
+    width: 360px;
+    color: var(--navyblue, #2E2F42);
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px; 
+    line-height: 24px;
     letter-spacing: 0.32px;
-    margin-top: 60px;
-}
-
-.modal-form {}
-
-.label {
-    position: absolute;
-    font-size: 12px;
-    letter-spacing: 0.01em;
-    line-height: 0.87px;
-    top: -16px;
-} 
-
-.input-form,
-.textarea-form {
-    width: 100%;
-    margin: 0 0 29px 0;
-    margin-bottom: 29px;
-    padding: 11px 16px 11px 40px;
-    border: 1px solid rgba(33, 33, 0.2);
-    border-radius: 4px;
-    line-height: 087px;
-    letter-spacing: 0.01em;
-    color: var(--navyblue-modal);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-form:hover,
-.input-form:focus,
-.textarea-form:hover,
-.textarea-form:focus {
-    outline: none;
-    border-color: var(--oceancolor);
-}
-
-
-.textarea-form {
-    resize: none;
-    padding-left: 16px;
-    height: 120px;
-}
-
-.button-center {
-    display: block;
-    margin: 0 auto;
-}
-label {
-    position: relative;
-}
-
-label > .form-icon {
-    position: absolute;
-    top: 55%;
-    left: 8px;
-} */
-
-/* .label {
-    margin-left: 25px;
     
-    padding: 4px;
-    display: flex;
+}
+.text-label {
+    color: var(--lightslate, #8E8F99);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+}
+
+.label-input {
     width: 360px;
-    flex-direction: column;
-    gap: 8px;
-} */ */
-
-/* .label .form-icon {
-    border: 2px;
-} */
-
-/* .text {
-    width: 440px;
-    height: 120px;
-} */
-
-/* .form .text {
     height: 40px;
-} */
+    border-radius: 4px;
+    border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+}
 
-/* .label.form-field {
-    margin-left: 10px;
-    padding: 4px;
+.label-form,
+.text-label,
+.label-input,
+.label-text,
+.form-textarea {
     display: flex;
     width: 360px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    
-} */
-
-/* .label .name,
-.label .phone,
-.label .email {
-    flex-direction: column;
-} */
-
-/* .form-icon {
-    margin-right: 50px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 4px;
-    border: 1px;
-}  */
-/* .form-field {
-    width: 360px;
-    height: 60px;
-    position: absolute;
-    margin: 20px 35px;
-    font-size: 12px;
 }
 
-.form-field .checkbox, 
-.form-field .button.submit {
-    display: flex;
-}*/
-
-/* .text-term {
-   font-size: 8px;
-    font-weight: 00;
-    line-height: 12px;
-    letter-spacing: 0.28px;
-}
-.text-policy {
-    fill: var(--oceancolor);
-}
-
-h5 {
-    text-decoration: underline;
-    fill: var(--oceancolor);
-}  */
 
 
 
-/* .checkbox-icon .form-label {
-   display: flex;
-   margin-top: 60px;
-} */
 
 
-
-/* .label.text-feedback {
-    margin-bottom: 60px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    border: 1px solid var(--navyblue, rgba(46, 47, 66, 0.40));
-} */
-
-/* .text-feedback {
-    margin-left: 20px;
-    margin-bottom: 80px;
-} */
-
-/* .check-box {
-    position: absolute;
-    padding: 0;
-    width: 18px;
-    height: 18px;
-    margin-left: -4px;
-    margin-top: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    stroke-width: 1px;
-    background: var(--cornflower, #e7e9fc);
-    color: var(--navyblue);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-/* .checkbox-icon {
-    fill: currentColor;
-}
-.check-box:hover,
-.check-box:focus {
-    color: var(--whitecolor);
-    background-color: var(--ocean);
-    
-} */
-
-
-/* .checkbox .form-label {
-    margin-top: 100px;
-    margin-left: 45px;
-} */
-
-
-/* .form-field .button.submit {
-   margin-top: 100px;
-    margin-left: 45px;
-} */
-
-/* .button.submit {
-    font-size: 20px;
-    margin-top: 10px;
-    padding: 10px 40px;
-    border-radius: 4px;
-    background: var(--iris, #4D5AE5);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--whitecolor);
-} */
-
-/* .button.submit:hover,
-.button.submit:focus {
-    fill: currentColor;
-} */
-
-
-/* .checkbox {
-    width: 16px;
-    height: 16px;
-    background-color: var(--cornflower, #e7e9fc);
-    color: var(--navyblue);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: 45px;
- } */
-
-/* .checkbox {
-    fill: currentColor;
-}
-
-.checkbox:hover,
-.checkbox:focus {
-    color: var(--whitecolor);
-    background-color: var(--ocean);
-}  */
-
-/* .policy-message {
-    font-size: 12px;
-} */
-
-/* .button.submit {
-    border-radius: 1;
-    background-color: var(--iriscolor);
-    color: var(--whitecolor);
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    font-weight: 500;
-    padding: 10px 32px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0. 0.15);
-    gap: 10px;
-    display: inline-flex;
-    align-items: flex-start;
-    
-}
-
-.button.submit:hover,
-.button.submit:focus {
-    background-color: var(--oceancolor);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-} */
-
-/* .check-box {
-    position: absolute;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.check-box-icon {
-    fill: currentColor;
-}
-
-.check-box:hover,
-.check-box:focus {
-    color: var(--whitecolor);
-    background-color: var(--ocean);
-} */
-/* .form-icon {
-    display: flex;
-} */
