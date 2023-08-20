@@ -825,14 +825,13 @@ body {
     top: 50%;
     left: 50%;
     min-width: 408px;
-    min-height: 584px;
     background-color: var(--dairy, #fcfcfc);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     border-radius: 4px;
-
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -843,7 +842,6 @@ body {
     position: absolute;
     top: 24px;
     right: 24px;
-    margin: 10px 10px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -881,29 +879,32 @@ body {
     width: 360px;
     color: var(--navyblue, #2E2F42);
     text-align: center;
-    justify-content: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
-    padding: 70px 10px 10px 10px;
-    margin-left: 20px;
-    margin-top: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.container-form {
+    width: 100%;
 }
 
 .label-form {
-    padding-top: 4px;
     gap: 4px;
+    margin-bottom: 8px;
 }
 
 label {
     position: relative;
 }
 
-label>.input-icon {
+label > .input-icon {
     position: absolute;
-    top: 50%;
-    left: 15px;
+    top: 48%;
+    left: 8px;
 }
 
 .text-label {
@@ -916,12 +917,44 @@ label>.input-icon {
 
 }
 
-.label-input {
-    width: 360px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+.input-icon {
+    /* fill: #4D5AE5; */
+    /* color: var(--iriscolor);
+    transition: color 250ms ease-in-out; */
 }
+
+
+.label-input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid var(--navyblue-modal);
+    padding-left: 30px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; 
+    letter-spacing: 0.48px;
+   
+}
+
+.label-input.input-icon {
+    fill: #4D5AE5;
+    border: 1px solid var(--iris, #4D5AE5);
+}
+
+.label-input:hover,
+.label-input:focus, 
+.input-icon:hover,
+.input-icon:focus,
+.form-textarea:hover,
+.form-textarea:focus {
+    border-radius: 4px;
+    border: 1px solid var(--iris, #4D5AE5);
+    fill: #4D5AE5;
+}
+
 
 .label-form,
 .textarea-label-form,
@@ -932,25 +965,39 @@ label>.input-icon {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 10px;
-}
-
-.input-icon {
-    font-style: none;
 }
 
 
 .textarea-label-form {
     padding-top: 4px;
-    gap: 4px;
+    gap: 8px;
 }
 
+textarea.form-textarea {
+    outline: none;
+    border: 1px solid var(--navyblue-modal);
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+    
+}
+
+.input-checkbox {
+    width: 16px;
+    height: 16px;
+}
+
+
 .form-textarea {
-    width: 360px;
+    width: 100%;
     height: 120px;
     flex-shrink: 0;
-    margin-left: 10px;
-    margin-bottom: 16px;
+    resize: none;
+
 }
 
 .form-agree-box_link {
@@ -960,13 +1007,11 @@ label>.input-icon {
 }
 
 .form-agree-box_text {
-    width: 338px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 30px;
-    gap: 4px;
+    width: 100%;
+     align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 16px;
 }
 
 .form-button_container {
@@ -980,10 +1025,17 @@ label>.input-icon {
     line-height: 14px;
 }
 
+.button.form-button {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+}
+
 .form-button {
     margin: 0 auto;
     margin-top: 20px;
-    display: inline-flex;
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;
@@ -991,4 +1043,16 @@ label>.input-icon {
     background: var(--iris, #4D5AE5);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: var(--whitecolor);
+    outline: none;
+    border: unset;
+    min-width: 169px;
+    text-align: center;
+}
+
+.form-button:hover,
+.form-button:focus {
+    cursor: pointer;
+    background-color: var(--oceancolor);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);    
 }
