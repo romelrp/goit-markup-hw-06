@@ -143,6 +143,41 @@ body {
     font-size: 16px;
 }
 
+.page {
+    position: relative;
+}
+
+.page.current::after {
+    content: "";
+    border: 2px solid var(--oceancolor);
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    background-color: var(--oceancolor);
+}
+
+.page::after {
+    content: "";
+    border-radius: 2px;
+    border: 2px solid transparent;
+    height: 4px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: width 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+.page:hover::after,
+.page:focus::after {
+    border: 2px solid var(--oceancolor);
+    background-color: var(--oceancolor);
+    width: 100%;
+}   
+
+
 /*----Checked----*/
 .nav-menu.list .page.link:hover,
 .nav-menu.list .page.link:focus,
@@ -490,6 +525,7 @@ body {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    transition: box-shadow 250ms ease-in-out;
 }
 
 .project-card:hover {
